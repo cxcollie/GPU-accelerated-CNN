@@ -13,5 +13,7 @@ This project previously ran on RAI system provided by instructors. Thus this pro
 
 ### Team Members
 [Xiaocong Chen](https://www.linkedin.com/in/xiaocongchen/)
+<br>
 [Xinzhou Zhao](https://www.linkedin.com/in/xinzhou-zhao-9a2406103/)
+<br>
 Tianyi Shan
