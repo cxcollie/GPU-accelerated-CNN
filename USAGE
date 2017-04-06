@@ -1,0 +1,15 @@
+1.To run this project:
+rai -d <this folder>
+
+2.For profiling, add following lines into rai-build.yml:
+    - >-
+      nvprof --cpu-profiling on --export-profile timeline.nvprof --
+      ./ece408 /src/data/test10.hdf5 /src/data/model.hdf5 10
+    - >-
+      nvprof --cpu-profiling on --export-profile analysis.nvprof --analysis-metrics --
+      ./ece408 /src/data/test10.hdf5 /src/data/model.hdf5 10
+
+to replace:
+    -- ./ece408 /src/data/test10.hdf5 /src/data/model.hdf5 10
+where the dataset and batch_size should be changed accordingly (i.e., test10.hdf5 with 10, test100.hdf5 with 100, and testfull.hdf5 with 10000).
+Then after running the program, import timeline.nvprof and analysis.nvprof into nvcc graphical interface of CUDA toolkit.
