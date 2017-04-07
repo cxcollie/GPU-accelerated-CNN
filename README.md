@@ -6,7 +6,7 @@ Our team ranked 2nd in final project competition of 16fall ECE 408. The sequenti
 This project previously ran on RAI system provided by instructors. Thus this project may be more worthwhile as a code reference.
 
 ### Major Optimization
-（Welcome to check the report for detailed analysis :D）
+（Welcome to check the <a href="./report.pdf">report</a> for detailed analysis :D）
 1. Convolution with unrolled matrix multiplication. The conventional convolution calculation is not suitable for GPU code in consideration of [memory coalescing](https://devblogs.nvidia.com/parallelforall/how-access-global-memory-efficiently-cuda-c-kernels/). In contrast, unrolled matrix multiplication, which involved little extra work though, can achieve better memory coalescing as neighboring thread can read continus stride of data.
 2. Tiled implementation. This is a commonly used trick in [matrix multiplication](http://www.techdarting.com/2014/03/matrix-multiplication-in-cuda-using.html). Threads in a same tile can load data to shared memory together, which highly reduce the global memory bandwidth.
 3. Dimension transformation. The original data layout provided is not suitable for memory coalescing, thus we transorm some dimension in input and output of intermediate functions.
