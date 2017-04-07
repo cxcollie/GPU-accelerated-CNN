@@ -1,7 +1,7 @@
 # ECE 408 Project
 The goal of this project is to accelerate the forward propagation step of the Convolutional Neural Network (CNN) algorithm using GPU. The sequential implementation provided follows the basic algorithm 16.4 and 16.5 decribed in [book chapter 16](https://wiki.illinois.edu/wiki/display/ece408f16/Book+Chapters?preview=/602518692/603851747/3rd-Edition-Chapter16-case-study-DNN-FINAL.pdf). The dataset and model are from the [MNIST database](http://yann.lecun.com/exdb/mnist/).
 
-Our team ranked 2nd in final project competition of 16fall ECE 408. The sequential implementation takes about more than a minute, while after GPU-accelerated, it takes around 200ms only.
+Our team ranked 2nd in final project competition of 16fall ECE 408. The sequential implementation takes about 30 minutes for the largest data set (with 10,000 images), while after GPU-accelerated, it takes around 200ms only.
 
 This project previously ran on RAI system provided by instructors. Thus this project may be more worthwhile as a code reference.
 
